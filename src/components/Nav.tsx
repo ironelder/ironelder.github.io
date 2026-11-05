@@ -8,6 +8,7 @@ import styles from "./Nav.module.css";
 
 const links = [
   { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
   { id: "now", label: "Now" },

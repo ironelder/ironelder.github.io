@@ -1,0 +1,117 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+  position: relative;
+  display: grid;
+  gap: 44px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 5px;
+  width: 2px;
+  border-radius: 1px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent-2), var(--line));
+}
+
+.company {
+  position: relative;
+  min-width: 0;
+}
+.companyHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-bottom: 16px;
+}
+.marker {
+  position: absolute;
+  left: -32px;
+  top: -2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.marker svg {
+  width: 14px;
+  height: 14px;
+}
+.companyHead h3 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.period {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.projects {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  align-items: start;
+}
+.project {
+  min-width: 0;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.projectHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+.projectHead h4 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+}
+.points {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.points li::marker {
+  color: var(--accent);
+}
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tags li {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.educationNote {
+  margin: 0;
+  color: var(--muted);
+}

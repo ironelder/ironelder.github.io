@@ -11,7 +11,10 @@ export function Contact() {
           <h2>{contact.title}</h2>
           <p>{contact.desc}</p>
           <div className="btn-row">
-            <a className="btn" href={githubUrl} target="_blank" rel="noopener">
+            <a className="btn" href={`mailto:${profile.email}`}>
+              <Icon name="mail" /> {profile.email}
+            </a>
+            <a className={`btn ${styles.ghost}`} href={githubUrl} target="_blank" rel="noopener">
               <Icon name="github" /> github.com/{profile.githubUser}
             </a>
             <a className={`btn ${styles.ghost}`} href={repoUrl} target="_blank" rel="noopener">

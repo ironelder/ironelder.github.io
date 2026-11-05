@@ -1,4 +1,4 @@
-import { githubUrl, profile } from "@/data/profile";
+import { careerYears, githubUrl, profile } from "@/data/profile";
 import { CodeCard } from "./CodeCard";
 import { Icon } from "./Icon";
 import { TypingRole } from "./TypingRole";
@@ -16,7 +16,7 @@ export function Hero() {
         <div>
           <span className={`${styles.badge} reveal`}>
             <span className={styles.dot} />
-            {profile.badge}
+            경력 {careerYears()}년 · {profile.badgeSuffix}
           </span>
           <h1 className={`${styles.title} reveal d1`}>
             안녕하세요,

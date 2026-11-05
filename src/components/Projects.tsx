@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 
 export function Projects() {
   return (
-    <section className="section" id="projects">
+    <section className="section alt" id="projects">
       <div className="container">
         <p className="eyebrow reveal">Projects</p>
         <h2 className="section-title reveal d1">GitHub 저장소</h2>

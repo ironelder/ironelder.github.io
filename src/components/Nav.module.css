@@ -61,7 +61,7 @@
   color: var(--text);
   background: var(--accent-soft);
 }
-@media (min-width: 720px) {
+@media (min-width: 860px) {
   .links {
     display: flex;
   }

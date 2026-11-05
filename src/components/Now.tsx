@@ -4,7 +4,7 @@ import styles from "./Now.module.css";
 
 export function Now() {
   return (
-    <section className="section alt" id="now">
+    <section className="section" id="now">
       <div className="container">
         <p className="eyebrow reveal">Now</p>
         <h2 className="section-title reveal d1">요즘 하고 있는 것</h2>

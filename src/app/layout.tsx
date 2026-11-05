@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ironelder",
-  description: "Android 개발자 장진혁(ironelder)의 개인 홈페이지",
+  description: "모바일·웹 서비스 아키텍처와 AI Agent 를 다루는 엔지니어 장진혁(ironelder)의 홈페이지",
 };
 
 export const viewport: Viewport = {

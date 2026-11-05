@@ -5,11 +5,11 @@ import styles from "./Skills.module.css";
 
 export function Skills() {
   return (
-    <section className="section alt" id="skills">
+    <section className="section" id="skills">
       <div className="container">
         <p className="eyebrow reveal">Skills</p>
         <h2 className="section-title reveal d1">주로 쓰는 기술</h2>
-        <p className="section-desc reveal d1">매일 손에 익히고 있는 도구들입니다.</p>
+        <p className="section-desc reveal d1">모바일에서 웹·서버·AI 까지, 실무에서 써 온 기술들입니다.</p>
 
         <div className={styles.skills}>
           {skillGroups.map((group, i) => (

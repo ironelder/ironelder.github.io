@@ -27,8 +27,8 @@ export function About() {
                 {profile.focus}
               </li>
               <li>
-                <Icon name="pin" />
-                {profile.location}
+                <Icon name="school" />
+                {profile.education}
               </li>
             </ul>
           </aside>
