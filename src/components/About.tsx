@@ -14,7 +14,7 @@ export function About() {
 
         <div className={styles.about}>
           <aside className={`${styles.profile} reveal`}>
-            <Avatar initials={profile.initials} githubUser={profile.githubUser} />
+            <Avatar initials={profile.initials} src={profile.avatar} alt={`${profile.name} 프로필 사진`} />
             <p className={styles.name}>{profile.name}</p>
             <p className={styles.handle}>@{profile.githubUser}</p>
             <ul className={styles.meta}>

@@ -3,6 +3,7 @@ import type { IconName } from "@/components/Icon";
 export const profile = {
   name: "장진혁",
   initials: "JH",
+  avatar: "/profile.jpg",
   githubUser: "ironelder",
   email: "ironelder@gmail.com",
   role: "Mobile & Web Engineer",
