@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 28px;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #2a1d6e 0%, #4b2fb8 45%, #0f7a55 100%);
+  color: #fff;
+  box-shadow: 0 30px 60px rgba(42, 29, 110, 0.35);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(61, 220, 132, 0.35), transparent 40%);
+  pointer-events: none;
+}
+.card > * {
+  position: relative;
+}
+.card h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  font-weight: 800;
+}
+.card > p:not(.eyebrow) {
+  margin: 0 auto 30px;
+  max-width: 30em;
+  color: rgba(255, 255, 255, 0.82);
+}
+.eyebrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+.card :global(.btn) {
+  background: #fff;
+  color: #1b1440;
+  border-color: transparent;
+}
+.card :global(.btn).ghost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.card :global(.btn-row) {
+  justify-content: center;
+}

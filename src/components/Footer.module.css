@@ -1,0 +1,25 @@
+.footer {
+  padding: 36px 0 44px;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+.mono {
+  font-family: var(--mono);
+}
+.toTop {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.toTop:hover {
+  color: var(--accent);
+}
