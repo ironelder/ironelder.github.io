@@ -1,7 +1,7 @@
 .footer {
-  padding: 36px 0 44px;
+  padding: 32px 0 48px;
   color: var(--muted);
-  font-size: 13.5px;
+  font-size: 13px;
 }
 .inner {
   display: flex;
@@ -10,7 +10,7 @@
   justify-content: space-between;
   gap: 12px;
   border-top: 1px solid var(--line);
-  padding-top: 28px;
+  padding-top: 24px;
 }
 .mono {
   font-family: var(--mono);
@@ -18,8 +18,9 @@
 .toTop {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  transition: color 0.15s var(--ease);
 }
 .toTop:hover {
-  color: var(--accent);
+  color: var(--text);
 }

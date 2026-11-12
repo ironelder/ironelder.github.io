@@ -102,15 +102,12 @@ export function RepoGrid({ githubUser }: { githubUser: string }) {
   }
 
   const repos = state.status === "loaded" ? state.repos : [FALLBACK_REPO];
-  // 마지막 줄이 비면 "준비 중" 카드 1장으로 채움
-  const showPlaceholder = repos.length % COLUMNS !== 0 && repos.length < MAX_REPOS;
 
   return (
     <div className={styles.grid}>
       {repos.map((repo) => (
         <RepoCard key={repo.name} repo={repo} />
       ))}
-      {showPlaceholder && <PlaceholderCard />}
     </div>
   );
 }
@@ -142,17 +139,5 @@ function RepoCard({ repo }: { repo: Repo }) {
         {repo.pushed_at && <span>{relativeTime(repo.pushed_at)}</span>}
       </div>
     </a>
-  );
-}
-
-function PlaceholderCard() {
-  return (
-    <div className={`${styles.repo} ${styles.placeholder}`}>
-      <div className={styles.plus}>
-        <Icon name="plus" />
-      </div>
-      <strong>다음 프로젝트 준비 중</strong>
-      <span>곧 여기에 채워질 예정이에요.</span>
-    </div>
   );
 }

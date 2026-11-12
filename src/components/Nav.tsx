@@ -47,10 +47,7 @@ export function Nav() {
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
         <a className={styles.logo} href="#top" aria-label="맨 위로">
-          <span className={styles.bracket}>&lt;</span>
           {profile.githubUser}
-          <span className={styles.bracket}>/&gt;</span>
-          <span className={styles.cursor} aria-hidden="true" />
         </a>
         <nav aria-label="주요 메뉴">
           <ul className={styles.links}>

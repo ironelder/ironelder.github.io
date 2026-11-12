@@ -9,7 +9,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <span>
-          &copy; {year} <span className={styles.mono}>{profile.githubUser}</span>. Built with Next.js.
+          &copy; {year} <span className={styles.mono}>{profile.githubUser}</span> · Built with Next.js
         </span>
         <a className={styles.toTop} href="#top">
           <Icon name="up" size={14} /> 맨 위로

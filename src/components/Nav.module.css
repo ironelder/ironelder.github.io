@@ -2,11 +2,9 @@
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 50;
-  background: var(--nav-bg);
-  backdrop-filter: saturate(160%) blur(14px);
-  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  background: var(--bg);
   border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition: border-color 0.15s var(--ease);
 }
 .scrolled {
   border-bottom-color: var(--line);
@@ -21,24 +19,8 @@
 
 .logo {
   font-family: var(--mono);
-  font-weight: 700;
-  font-size: 17px;
-  letter-spacing: -0.02em;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-.bracket {
-  color: var(--accent);
-}
-.cursor {
-  display: inline-block;
-  width: 8px;
-  height: 17px;
-  margin-left: 3px;
-  background: var(--accent-2);
-  border-radius: 2px;
-  animation: blink 1.1s steps(1) infinite;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .links {
@@ -50,16 +32,20 @@
 }
 .links a {
   display: block;
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 14.5px;
-  color: var(--muted);
-  transition: color 0.2s ease, background-color 0.2s ease;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-2);
+  transition: color 0.15s var(--ease), background-color 0.15s var(--ease);
 }
-.links a:hover,
+.links a:hover {
+  color: var(--text);
+}
 .links a.active {
   color: var(--text);
-  background: var(--accent-soft);
+  background: var(--bg-raised);
 }
 @media (min-width: 860px) {
   .links {
@@ -70,7 +56,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .themeToggle .sun {
@@ -81,10 +67,4 @@
 }
 :root[data-theme="dark"] .themeToggle .moon {
   display: none;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
 }

@@ -8,11 +8,11 @@ export const profile = {
   email: "ironelder@gmail.com",
   role: "Mobile & Web Engineer",
   focus: "Android · React · AI Agent",
+  language: "영어 일상 회화",
   education: "백석대학교 소프트웨어공학과",
-  badgeSuffix: "Mobile · Web · AI Agent",
+  headline: ["대규모 모바일·웹 서비스와", "AI Agent 개발 환경을 만듭니다"],
   roles: ["Android Engineer", "React Developer", "AI Agent Engineer", "Mobile Architect"],
-  lead:
-    "대규모 모바일·웹 서비스 아키텍처와 AI Agent 를 다루는 엔지니어입니다. 원스토어·제주항공 같은 상용 서비스를 개발·운영하며 안정적인 아키텍처 설계, 레거시 현대화, AI 기반 개발 자동화를 해 왔습니다.",
+  lead: "원스토어·제주항공 같은 상용 서비스를 개발·운영하며 안정적인 아키텍처 설계, 레거시 현대화, AI 기반 개발 자동화를 해 왔습니다.",
   stack: ["Kotlin", "React", "AI Agent"],
 };
 
@@ -28,11 +28,12 @@ export function careerYears(now: Date = new Date()): number {
 }
 
 export const about = {
-  title: "이런 엔지니어입니다",
-  desc: "상용 서비스 운영 경험을 바탕으로 기술 문제를 구조적으로 풀고, 안정적인 아키텍처와 AI 자동화로 개발 효율을 높이는 데 강점이 있습니다.",
+  title: "사람들과 배운 것을 나누는 개발자",
   paragraphs: [
-    "Android 를 중심으로 iOS·Hybrid·React 웹까지 다뤄 왔습니다. MVI/MVVM 공통 프레임워크를 직접 설계하고, Java → Kotlin, XML → Jetpack Compose 전환과 멀티모듈 구조 개선으로 레거시를 현대화했습니다.",
-    "웹에서는 jQuery 화면을 React 컴포넌트 구조로 점진 전환하고 Android 앱과 React WebView 사이 양방향 통신 구조를 만들었습니다. AWS·Docker·Kubernetes·Redis 로 데이터 수집 서버를 구축한 경험도 있고, 최근에는 MCP·Claude Code 로 팀 공통 AI Agent 개발 환경을 만들고 있습니다.",
+    "첫 회사에서는 모바일 앱을 개발하며 대부분의 문제를 혼자 공부하고 해결했습니다. 그러다 잠깐 함께 일했던 분의 제안으로 이직했고, 컨퍼런스와 스터디, 개발자 모임을 적극 권하는 회사를 만나 여러 분야의 컨퍼런스와 개발자 토크에 나가기 시작했습니다.",
+    "커뮤니티에서 모르던 지식을 쌓고 최신 흐름을 함께 이야기하다 보니 개발이 더 재미있어졌고, 저도 누군가에게 도움이 되고 싶어 공부의 폭을 넓혔습니다. 지금도 퇴근 후 소규모 개발자 컨퍼런스와 랜선 런치 미팅에서 개발자분들과 이야기하며 흐름을 놓치지 않고, 스스로 다시 동기를 다지고 있습니다.",
+    "지금 다니는 회사는 AI 활용을 적극 장려합니다. 업무 프로세스 자동화와 AI Agent 튜닝·오케스트레이션을 실무에 적용하면서 프롬프트·컨텍스트·루프/하네스 엔지니어링, 사내 지식 검색(kb_search)과 RAG 구성 방식을 비교하고 직접 부딪혀 왔습니다.",
+    "그 과정에서 겪은 오류와 예상하지 못한 실수까지 정리해 사내 동료들과 나누고, 카카오톡 오픈채팅방과 Slack, 스터디 그룹에서 발표하고 있습니다. 발표를 준비하며 배운 것을 한 번 더 복습하고, 그 내용이 주변 개발자분들께 도움이 되도록 노력하고 있습니다.",
   ],
   highlights: [
     { icon: "android", title: "대규모 서비스", desc: "원스토어·제주항공 모바일 서비스 개발과 운영, 플랫폼 호환성 대응과 핵심 기능 고도화" },
@@ -64,19 +65,23 @@ export const experiences: Experience[] = [
     projects: [
       {
         title: "AI 기반 개발 자동화 환경 설계 및 구축",
-        period: "2026.01 – 2026.11",
+        period: "2024.10 – 2026.11",
         points: [
-          "Cursor 기반 팀 공통 AI Agent 운영 규칙과 역할 기반 Multi-Agent 아키텍처 구성",
+          "Sonnet 3.5 기반 프롬프트 엔지니어링으로 소규모 기능 개발 에이전트 구성",
+          "Opus 4.1 기반 컨텍스트 엔지니어링으로 메모리 저장, 입력·결과물 일관성, 토큰 소모 최적화",
+          "Cursor 기반 팀 공통 AI Agent 운영 규칙과 역할 기반 Multi-Agent Orchestration 구성",
           "AI Skills·Plugins 패키징·배포 체계 구축, Claude Code 로 Agent Harness 마이그레이션",
           "RAG 기반 프로젝트 컨텍스트 검색 구조 개선, Rules·Hooks·Skills 운영 체계 정비",
+          "망분리 환경에서 sLLM 으로 VOC 고객 정보 추출 Agent 구성",
         ],
-        tags: ["MCP", "LangGraph", "Claude Code", "Cursor", "RAG"],
+        tags: ["MCP", "LangGraph", "Claude Code", "Cursor", "RAG", "sLLM"],
       },
       {
         title: "React 기반 WebView 서비스 개발 및 Android 연동",
         period: "2025.09 – 2026.11",
         points: [
           "jQuery·iframe 기반 Admin 페이지를 React 컴포넌트 구조로 점진 전환",
+          "jQuery 와 React 가 공존하는 전환 구간의 이벤트 충돌·중복 렌더링 대응",
           "사전예약·웹게임 전시 WebView 패널을 React Hooks 로 설계·구현",
           "Android Native ↔ React WebView 간 JavaScript Interface 양방향 통신 설계",
         ],
@@ -84,29 +89,32 @@ export const experiences: Experience[] = [
       },
       {
         title: "글로벌 원스토어 개발 및 운영",
-        period: "2024.01 – 2026.09",
+        period: "2023.10 – 2026.11",
         points: [
           "기존 MVC/MVVM 을 대체하는 MVI 공통 아키텍처를 직접 설계해 전체 화면에 적용",
-          "XML → Jetpack Compose, Java → Kotlin 전환으로 레거시 현대화",
+          "MVI·Compose 레퍼런스 화면을 먼저 구현해 팀 내 아키텍처 전환과 개발 표준화 주도",
+          "XML → Jetpack Compose(WDS 디자인 시스템), Java → Kotlin 전환으로 레거시 현대화",
           "국가별 Gradle Product Flavor 빌드 환경과 CI/CD 자동화 구축",
         ],
         tags: ["MVI", "Jetpack Compose", "StateFlow", "Multi-module", "CI/CD"],
       },
       {
         title: "국내 원스토어 개발 및 운영",
-        period: "2022.09 – 2026.09",
+        period: "2022.09 – 2026.11",
         points: [
           "앱 다운로드·설치·복구의 복잡한 비동기 상태를 MVI 로 재구성",
           "PackageInstaller·WorkManager·Foreground Service 기반 설치·백그라운드 작업 개발",
-          "Android 15 정책 변경·앱 서명키 로테이션 등 플랫폼 호환성 대응",
+          "Android Multi-User 환경에서 사용자별 앱 다운로드·설치 기능 구현",
+          "Android 15 정책 변경·앱 서명키 로테이션·iARC 등급 정책 등 플랫폼 호환성 대응",
+          "MVC 기반 마이페이지를 MVVM·Jetpack Compose 로 전환",
         ],
-        tags: ["PackageInstaller", "WorkManager", "MVVM", "Compose"],
+        tags: ["PackageInstaller", "WorkManager", "Multi-User", "Dynamic Feature", "Compose"],
       },
     ],
   },
   {
     company: "AKIS",
-    period: "2020.08 – 2022.08",
+    period: "2020.09 – 2022.08",
     projects: [
       {
         title: "제주항공 예약 서비스 개발 및 운영",
@@ -125,6 +133,7 @@ export const experiences: Experience[] = [
           "대고객 Android 앱 UI/UX 개편, 인증·로그인 기능 개발",
           "차세대 PSS 모바일 앱의 MVVM 아키텍처와 Hilt/Dagger 공통 기반 설계",
           "모바일 탑승권·Wallet 연동·OCR SDK 등 항공 핵심 기능, Android·iOS 병행 개발",
+          "객실·운항 승무원, 정비사, 임직원용 업무 앱 개발과 운영",
         ],
         tags: ["MVVM", "Hilt", "Coroutines", "iOS"],
       },
@@ -132,11 +141,11 @@ export const experiences: Experience[] = [
   },
   {
     company: "푸드노트 서비스",
-    period: "2020.02 – 2020.08",
+    period: "2020.03 – 2020.09",
     projects: [
       {
         title: "React Native 앱 및 웹 프론트엔드 개발",
-        period: "2020.02 – 2020.08",
+        period: "2020.03 – 2020.09",
         points: [
           "React Native 앱의 초기 프로젝트 구조와 개발 환경 설계",
           "React 기반 서비스 웹페이지 프론트엔드 개발",
@@ -147,8 +156,24 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    company: "DOCL · 재능기부",
+    period: "2019.10 – 2020.04",
+    projects: [
+      {
+        title: "코로나19 자가검진 앱 개발",
+        period: "2019.10 – 2020.04",
+        points: [
+          "코로나19 확산 시기에 자가검진 앱 개발에 재능기부로 참여",
+          "Flutter 로 Android·iOS 크로스플랫폼 앱 개발",
+          "플랫폼별 빌드 환경 구성부터 스토어 배포까지 직접 수행",
+        ],
+        tags: ["Flutter", "Android", "iOS"],
+      },
+    ],
+  },
+  {
     company: "지니언스",
-    period: "2016.02 – 2020.02",
+    period: "2016.02 – 2020.03",
     projects: [
       {
         title: "Genian NAC Mobile 앱 개발",
@@ -156,6 +181,7 @@ export const experiences: Experience[] = [
         points: [
           "React Native 기반 기업용 모바일 보안 앱 개발",
           "다양한 Android 단말·OS 환경의 호환성 문제 분석과 대응",
+          "외부 모바일 보안 솔루션과의 연동 기능 개발",
         ],
         tags: ["React Native", "Android"],
       },
@@ -166,8 +192,9 @@ export const experiences: Experience[] = [
           "Vue.js MVVM 기반 기업용 네트워크 접근 제어 관리 콘솔 개발",
           "관리자 계정 보호를 위한 2단계 인증(2FA) 기능 개발",
           "Elasticsearch Node Snapshot 백업·복구 관리 기능 추가",
+          "IEEE 802.1X 인증 환경의 VLAN 적용 정책 설계",
         ],
-        tags: ["Vue.js", "2FA", "Elasticsearch"],
+        tags: ["Vue.js", "2FA", "Elasticsearch", "802.1X"],
       },
       {
         title: "AWS 기반 NoSQL 데이터 수집 서버 구축",
@@ -197,7 +224,11 @@ export const experiences: Experience[] = [
       {
         title: "T간편모드 개발",
         period: "2013.08 – 2014.06",
-        points: ["단말 탑재용 기본 런처 구조 개발", "제조사 연동용 Android 프레임워크 API 정의서 작성"],
+        points: [
+          "단말 탑재용 기본 런처 구조 개발",
+          "제조사 연동용 Android 프레임워크 API 정의서 작성",
+          "단말별 요구사항에 맞춘 커스텀 UI 개발",
+        ],
         tags: ["Launcher", "Framework API"],
       },
       {
@@ -207,10 +238,16 @@ export const experiences: Experience[] = [
         tags: ["Graphics", "Performance"],
       },
       {
-        title: "쿠키 런처 개선 · ERP 모바일 앱 개발",
-        period: "2012.01 – 2012.12",
-        points: ["OpenGL ES 를 OpenVG 로 개선해 다해상도 대응", "현대산업개발 ERP 게시판 앱 개발"],
+        title: "쿠키 런처 개선",
+        period: "2012.03 – 2012.12",
+        points: ["사내 그래픽 엔진 메모리 누수 제거", "OpenGL ES 를 OpenVG 로 개선해 다해상도 대응", "Play 스토어 게시와 유지보수"],
         tags: ["OpenGL ES", "OpenVG"],
+      },
+      {
+        title: "현대산업개발 ERP 모바일 앱 개발",
+        period: "2012.01 – 2012.03",
+        points: ["ERP 시스템 게시판 앱 개발"],
+        tags: ["Android"],
       },
     ],
   },
@@ -225,23 +262,19 @@ export const education = {
 export const skillGroups = [
   {
     title: "Mobile",
-    color: "#3ddc84",
-    items: ["Kotlin", "Java", "Jetpack Compose", "Coroutines · StateFlow · Channel", "Hilt · Dagger", "MVI · MVVM", "Multi-module", "Gradle · CI/CD"],
+    items: ["Kotlin", "Java", "Jetpack Compose", "Coroutines · StateFlow · Channel", "Hilt · Dagger", "MVI · MVVM", "Multi-module · Dynamic Feature", "Gradle · CI/CD", "Flutter"],
   },
   {
     title: "Web Frontend",
-    color: "#61dafb",
     items: ["React", "React Hooks", "React Native", "Vue.js", "JavaScript", "jQuery → React 전환", "WebView JS Bridge"],
   },
   {
     title: "Backend & Infra",
-    color: "#ff8a5c",
-    items: ["AWS", "Docker", "Kubernetes", "Redis", "Elasticsearch", "NoSQL"],
+    items: ["AWS", "Docker", "Kubernetes", "Redis", "Elasticsearch", "NoSQL", "802.1X · VLAN"],
   },
   {
     title: "AI Engineering",
-    color: "#a97bff",
-    items: ["MCP", "LangGraph", "Tool Calling", "Multi-Agent", "Claude Code", "Cursor", "RAG", "Context Engineering"],
+    items: ["MCP", "LangGraph", "Tool Calling", "Multi-Agent", "Claude Code", "Cursor", "RAG", "sLLM", "Prompt · Context · Harness Engineering"],
   },
 ];
 
