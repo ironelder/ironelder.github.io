@@ -8,7 +8,7 @@ export type IconName =
   | "repo"
   | "star"
   | "plus"
-  | "android"
+  | "mobile"
   | "layers"
   | "compose"
   | "spark"
@@ -78,11 +78,11 @@ export function IconSprite() {
       <symbol id="i-plus" viewBox="0 0 24 24">
         <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" d="M12 5v14M5 12h14" />
       </symbol>
-      <symbol id="i-android" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M17.6 9.48 19.44 6.3a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 1 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52ZM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Z"
-        />
+      <symbol id="i-mobile" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" />
+          <path d="M12 18h.01" />
+        </g>
       </symbol>
       <symbol id="i-layers" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round">

@@ -35,7 +35,7 @@ export const about = {
     "그 과정에서 겪은 오류와 예상하지 못한 실수까지 정리해 사내 동료들과 나누고, 카카오톡 오픈채팅방과 Slack, 스터디 그룹에서 발표하고 있습니다. 발표를 준비하며 배운 것을 한 번 더 복습하고, 그 내용이 주변 개발자분들께 도움이 되도록 노력하고 있습니다.",
   ],
   highlights: [
-    { icon: "android", title: "대규모 서비스", desc: "원스토어·제주항공 모바일 서비스 개발과 운영, 플랫폼 호환성 대응과 핵심 기능 고도화" },
+    { icon: "mobile", title: "대규모 서비스", desc: "원스토어·제주항공 모바일 서비스 개발과 운영, 플랫폼 호환성 대응과 핵심 기능 고도화" },
     { icon: "layers", title: "아키텍처 설계", desc: "MVI/MVVM 공통 프레임워크 직접 설계, Coroutines·StateFlow·Channel 기반 상태 관리 표준화" },
     { icon: "globe", title: "모바일 + 웹", desc: "Android, iOS, Hybrid, React WebView 기반 서비스 기능 개발" },
     { icon: "spark", title: "AI Engineering", desc: "MCP·LangGraph·Tool Calling 기반 AI Agent 오케스트레이션과 개발 자동화" },

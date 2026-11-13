@@ -17,7 +17,7 @@ export function About() {
             <p className={styles.handle}>@{profile.githubUser}</p>
             <ul className={styles.meta}>
               <li>
-                <Icon name="android" />
+                <Icon name="mobile" />
                 {profile.role}
               </li>
               <li>
