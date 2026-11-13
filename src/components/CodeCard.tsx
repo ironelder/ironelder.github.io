@@ -22,7 +22,7 @@ export function CodeCard() {
           <span className={styles.str}>&quot;@{profile.githubUser}&quot;</span>,{"\n"}
           {"    "}
           <span className={styles.kw}>val</span> <span className={styles.prop}>role</span>: <span className={styles.type}>String</span> ={" "}
-          <span className={styles.str}>&quot;{profile.roles[0]}&quot;</span>,{"\n"}
+          <span className={styles.str}>&quot;{profile.role}&quot;</span>,{"\n"}
           {"    "}
           <span className={styles.kw}>val</span> <span className={styles.prop}>stack</span>: <span className={styles.type}>List</span>&lt;
           <span className={styles.type}>String</span>&gt; = <span className={styles.fn}>listOf</span>({"\n"}
