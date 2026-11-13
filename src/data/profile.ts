@@ -11,7 +11,7 @@ export const profile = {
   language: "영어 일상 회화",
   education: "백석대학교 소프트웨어공학과",
   headline: ["대규모 모바일·웹 서비스와", "AI Agent 개발 환경을 만듭니다"],
-  roles: ["Android Engineer", "React Developer", "AI Agent Engineer", "Mobile Architect"],
+  roles: ["Product Engineer", "React Developer", "AI Agent Engineer", "Mobile Architect"],
   lead: "원스토어·제주항공 같은 상용 서비스를 개발·운영하며 안정적인 아키텍처 설계, 레거시 현대화, AI 기반 개발 자동화를 해 왔습니다.",
   stack: ["Kotlin", "React", "AI Agent"],
 };
@@ -156,7 +156,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    company: "DOCL · 재능기부",
+    company: "DOCL · 재능기부 (재직 중 병행)",
     period: "2019.10 – 2020.04",
     projects: [
       {
