@@ -9,7 +9,7 @@ export function Experience() {
         <p className="eyebrow">experience</p>
         <h2 className="section-title">경력</h2>
         <p className="section-desc">
-          총 경력 {careerYears()}년. Android 를 중심으로 웹 프론트엔드, 서버 인프라, AI Agent 까지 다뤄 왔습니다.
+          총 경력 {careerYears()}년. 모바일을 중심으로 웹 프론트엔드, 서버 인프라, AI Agent 까지 다뤄 왔습니다.
         </p>
 
         <ol className={styles.timeline}>
