@@ -87,6 +87,19 @@ export const experiences: Experience[] = [
         tags: ["React", "React Hooks", "WebView", "JS Bridge"],
       },
       {
+        title: "글로벌 원스토어 iOS 앱 개발 및 출시 준비",
+        period: "2023.09 – 2024.12",
+        points: [
+          "글로벌 Android·iOS 병행 개발: Android 상용 출시, iOS 는 출시 전 개발·준비 단계까지 진행(미출시)",
+          "Swift·SwiftUI 로 iOS 앱 신규 개발, Jenkins CI/CD 사용",
+          "네트워크 작업은 async/await, UI 상태 갱신은 Combine 으로 처리",
+          "Swift Testing 으로 서버 API 모델의 목업 데이터를 활용한 UseCase 테스트 작성",
+          "WDS 양 플랫폼 적용 시도 중 SwiftUI 화면 깜박임을 하위 래핑 컴포넌트의 @ObservedObject 선언 제거로 해결",
+          "서버 데이터 파싱 크래시를 강제 언래핑 사용 지점 전수 점검과 관련 로직 수정으로 해결",
+        ],
+        tags: ["Swift", "SwiftUI", "async/await", "Combine", "Swift Testing", "Jenkins"],
+      },
+      {
         title: "글로벌 원스토어 개발 및 운영",
         period: "2023.10 – 2026.11",
         points: [
@@ -129,12 +142,15 @@ export const experiences: Experience[] = [
         title: "제주항공 대고객 앱 및 사내 업무용 앱 개발",
         period: "2020.09 – 2022.08",
         points: [
+          "항공서비스팀 개발 리드로 PSS 차세대 모바일 어플리케이션 개발 프로젝트 수행: Kotlin Android 앱과 Swift·SwiftUI iOS 앱 신규 개발",
           "대고객 Android 앱 UI/UX 개편, 인증·로그인 기능 개발",
-          "차세대 PSS 모바일 앱의 MVVM 아키텍처와 Hilt/Dagger 공통 기반 설계",
-          "모바일 탑승권·Wallet 연동·OCR SDK 등 항공 핵심 기능, Android·iOS 병행 개발",
+          "차세대 PSS Android 앱의 MVVM 아키텍처와 Hilt/Dagger 공통 기반 설계",
+          "Android·iOS 모두 MVVM 과 모듈·레이어 분리 적용, iOS 는 RxSwift 로 화면 상태·비동기 흐름 처리",
+          "Android·iOS 모바일 탑승권 발급·조회와 OCR SDK 통합, iOS Apple Wallet 탑승권 저장 기능 개발",
+          "신규 개발한 iOS 앱 App Store 배포, Jenkins CI/CD 사용",
           "객실·운항 승무원, 정비사, 임직원용 업무 앱 개발과 운영",
         ],
-        tags: ["MVVM", "Hilt", "Coroutines", "iOS"],
+        tags: ["MVVM", "Hilt", "Coroutines", "iOS", "Swift", "SwiftUI", "RxSwift", "Jenkins"],
       },
     ],
   },
@@ -261,7 +277,7 @@ export const education = {
 export const skillGroups = [
   {
     title: "Mobile",
-    items: ["Kotlin", "Java", "Jetpack Compose", "Coroutines · StateFlow · Channel", "Hilt · Dagger", "MVI · MVVM", "Multi-module · Dynamic Feature", "Gradle · CI/CD", "Flutter"],
+    items: ["Kotlin", "Java", "Jetpack Compose", "Coroutines · StateFlow · Channel", "Hilt · Dagger", "MVI · MVVM", "Multi-module · Dynamic Feature", "Gradle · CI/CD", "Flutter", "Swift · SwiftUI", "RxSwift · Combine", "async/await", "Swift Testing", "Jenkins"],
   },
   {
     title: "Web Frontend",
